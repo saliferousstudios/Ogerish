@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
+  - ladder
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - ground
-  - 
+  - ladder
   - 
   - 
   - 
@@ -41,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 900832545
+    locked: 0
+  - name: decorations
+    uniqueID: 1147184131
+    locked: 0
+  - name: ladder
+    uniqueID: 1041334367
+    locked: 0
+  - name: foregound
+    uniqueID: 1637820371
     locked: 0
