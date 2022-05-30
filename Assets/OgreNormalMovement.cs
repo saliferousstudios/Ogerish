@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,31 +15,48 @@ public class OgreNormalMovement : MonoBehaviour
     private Collider2D colider;
     [SerializeField] private LayerMask ground;
     [SerializeField] private LayerMask ladder;
+    [SerializeField] private LayerMask spikes;
     //[SerializeField] private LayerMask enemies;
     [SerializeField] private float hurtForce = 10f;
     private Vector2 velocity;
-    private enum State { idle = 0, running = 1, jumping = 2, falling = 3, climb = 4};
+    private enum State { idle = 0, running = 1, jumping = 2, falling = 3, climb = 4, hurt = 5};
     private State state = State.idle;
-    private string[] animationState = { "OgreNormal_Idle", "OgreNormal_Run", "OgreNormal_Jump", "OgreNormal_Fall", "OgreNormal_Climb"};
+    private string[] animationState = { "OgreNormal_Idle", "OgreNormal_Run", "OgreNormal_Jump", "OgreNormal_Fall", "OgreNormal_Climb", "OgreNormal_Hurt"};
     bool canDoubleJump = true;
-   // bool canClimb = false;
-/*
-    private void OnCollisionEnter(Collision collision)
+    // bool canClimb = false;
+
+    /* private void OnTriggerEnter2D(Collision collision)
+     {
+         print(collision.gameObject.tag);
+         if(collision.gameObject.tag == "spikes")
+         {
+             print("spikes");
+             state = State.hurt;
+             rigidBody.velocity = new Vector2(hurtForce, hurtForce);
+         }
+
+     }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "ladder")
+        try
         {
-            canClimb = true;
+            print(collision.gameObject.tag);
+            if (collision.gameObject.tag == "spikes")
+            {
+                print("spikes");
+                state = State.hurt;
+                rigidBody.velocity = new Vector2(hurtForce, hurtForce);
+            }
         }
-        
+        catch (Exception e)
+        {
+            print(collision.GetType());
+            print("error" + e);
+
+        }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "ladder")
-        {
-            canClimb = false;
-        }
-    }*/
 
     void Start()
     {
@@ -79,7 +97,8 @@ public class OgreNormalMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        if (colider.IsTouchingLayers(ladder))
+
+       if (colider.IsTouchingLayers(ladder))
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -122,13 +141,11 @@ public class OgreNormalMovement : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.RightArrow))
             {
-                print("right");
                 rigidBody.velocity = new Vector2(speed, rigidBody.velocity.y);
                 state = State.running;
             }
             else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow))
             {
-                print("left");
                 rigidBody.velocity = new Vector2(-speed, rigidBody.velocity.y);
                 state = State.running;
             }

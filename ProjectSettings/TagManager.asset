@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - ladder
+  - spikes
   layers:
   - Default
   - TransparentFX
