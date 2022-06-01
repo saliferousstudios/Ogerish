@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OgreNormal_Idle
+  m_Name: Ogre_Climb1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - time: 1.2166667
-      value: {fileID: -453816293603465903, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - time: 1.7333333
-      value: {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - time: 3.9833333
-      value: {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
+      value: {fileID: -1816287386938565660, guid: 8a7699f797514c843a2ef7b5d36ab95a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,16 +40,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - {fileID: -453816293603465903, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
+    - {fileID: -1816287386938565660, guid: 8a7699f797514c843a2ef7b5d36ab95a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

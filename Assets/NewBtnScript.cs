@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class NewBtnScript : MonoBehaviour
 {
@@ -14,5 +16,10 @@ public class NewBtnScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+   public  void ClickNew()
+    {
+        SceneManager.LoadScene("TestScene");
     }
 }

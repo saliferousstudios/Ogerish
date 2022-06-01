@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 609682214}
   - component: {fileID: 609682213}
   - component: {fileID: 609682212}
+  - component: {fileID: 609682215}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -404,6 +405,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &609682215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609682211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0988812f84d3647a947096649b29a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1255522643
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,9 +499,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 4b0988812f84d3647a947096649b29a0, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1480314058}
+        m_TargetAssemblyTypeName: NewBtnScript, Assembly-CSharp
+        m_MethodName: ClickNew
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -681,8 +694,8 @@ Canvas:
   m_GameObject: {fileID: 1480314052}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 609682213}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -690,7 +703,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1637820371
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1480314056
@@ -775,8 +788,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1480314052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e54d90a0539b8d4d91bd80bd2994edd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b0988812f84d3647a947096649b29a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameScene: 
-  saveGameMenu: 

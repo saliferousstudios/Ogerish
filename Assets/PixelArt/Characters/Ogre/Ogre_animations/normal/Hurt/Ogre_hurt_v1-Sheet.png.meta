@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e247d2cf9c01b6e4297e62ebbf1c4840
+guid: c72ab28fec9f71c46b188a4ab24bc9cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4144361510370473625
-    second: Ogre_idle_v1-Sheet_0
+      213: 7337376391604750592
+    second: Ogre_hurt_v1-Sheet_0
   - first:
-      213: -453816293603465903
-    second: Ogre_idle_v1-Sheet_1
+      213: -9209379891983534702
+    second: Ogre_hurt_v1-Sheet_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,43 +109,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ogre_idle_v1-Sheet_0
+      name: Ogre_hurt_v1-Sheet_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 1
         y: 1
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 19
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4419238, y: 0.45160308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996fe6ef5dab38930800000000000000
-      internalID: 4144361510370473625
+      spriteID: 00940fcf3f893d560800000000000000
+      internalID: 7337376391604750592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ogre_idle_v1-Sheet_1
+      name: Ogre_hurt_v1-Sheet_1
       rect:
         serializedVersion: 2
         x: 22
         y: 1
-        width: 15
+        width: 16
         height: 18
       alignment: 9
-      pivot: {x: 0.49993628, y: 0.47015423}
+      pivot: {x: 0.4616859, y: 0.47616005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1552b724c78b3b9f0800000000000000
-      internalID: -453816293603465903
+      spriteID: 29532b818c5b13080800000000000000
+      internalID: -9209379891983534702
       vertices: []
       indices: 
       edges: []

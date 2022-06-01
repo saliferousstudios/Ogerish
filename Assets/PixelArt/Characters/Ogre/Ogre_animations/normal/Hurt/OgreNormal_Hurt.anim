@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OgreNormal_Idle
+  m_Name: OgreNormal_Hurt
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - time: 1.2166667
-      value: {fileID: -453816293603465903, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - time: 1.7333333
-      value: {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - time: 3.9833333
-      value: {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
+      value: {fileID: 7337376391604750592, guid: c72ab28fec9f71c46b188a4ab24bc9cb, type: 3}
+    - time: 0.31666666
+      value: {fileID: -9209379891983534702, guid: c72ab28fec9f71c46b188a4ab24bc9cb, type: 3}
+    - time: 0.6
+      value: {fileID: 7337376391604750592, guid: c72ab28fec9f71c46b188a4ab24bc9cb, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,21 +44,20 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - {fileID: -453816293603465903, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
-    - {fileID: 4144361510370473625, guid: e247d2cf9c01b6e4297e62ebbf1c4840, type: 3}
+    - {fileID: 7337376391604750592, guid: c72ab28fec9f71c46b188a4ab24bc9cb, type: 3}
+    - {fileID: -9209379891983534702, guid: c72ab28fec9f71c46b188a4ab24bc9cb, type: 3}
+    - {fileID: 7337376391604750592, guid: c72ab28fec9f71c46b188a4ab24bc9cb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4
+    m_StopTime: 0.6166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
